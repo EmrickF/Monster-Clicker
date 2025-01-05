@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Monster clicker</title>
+</head>
+
+<body>
+  <header>
+    <h1>Monster Clicker</h1>
+  </header>
+  <button id="upgrade" onclick="UpgradeFunction()">NEXT UPGRADE LOCKED
+  </button>
+
+  <main class="monsterparent">
+    <div class="cookie"><img src="orgmonster.png" alt=""></div>
+  </main>
+
+  <h2>Clicks: <span id="clicks"></span></h2>
+  <button id="rebirth">Rebirth</button>
+
+  <div id="minion-shop">
+
+    <button id="minion-shop-button">Minion Shop</button>
+
+
+    <div id="minion-dropdown" style="display: none;">
+      <h3>Buy Minions</h3>
+
+      <label for="minion-select">Select Minion:</label>
+      <select id="minion-select">
+        <option value="squirrel">Hyperactive Squirrel - 1000 Clicks</option>
+        <option value="gymbro">Gym Bro - 5000 Clicks</option>
+        <option value="gamer">Jittery Gamer - 10 000 Clicks</option>
+      </select>
+
+      <button id="buy-minion">Buy</button>
+
+      <div id="active-minions">
+        <h4>Active Minions</h4>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
